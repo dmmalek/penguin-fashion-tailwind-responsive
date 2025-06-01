@@ -13,30 +13,61 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/95f9081387.js"
+      crossorigin="anonymous"
+    ></script>
+
     <style>
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
-      .bebas-neue-regular {
+      .bebas-neue {
         font-family: "Bebas Neue", sans-serif;
       }
     </style>
   </head>
-  <body class="font-roboto">
+  <body class="font-roboto w-11/12 mx-auto">
     <header>
-      <nav class="flex jus">
-        <div class="logo">
-          <img src="./icons//logo.png" alt="logo" />
+      <nav class="flex justify-between items-center py-4">
+        <div class="w-48 lg:w-64">
+          <img class="w-full" src="./icons//logo.png" alt="logo" />
         </div>
-        <div class="nav-list">
-          <ul>
+        <div class="hidden md:block lg:block">
+          <ul class="flex gap-4 text-[#3C3C3C] font-medium">
             <li>Home</li>
             <li>Product</li>
             <li>About Us</li>
             <li>Contact Us</li>
           </ul>
         </div>
+        <div class="text-xl md:hidden lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
+      <!-- Banner section start here  -->
+      <section class="lg:flex justify-around items-center">
+        <!-- Banner content  -->
+        <div class="space-y-2 lg:space-y-5">
+          <h1 class="bebas-neue text-5xl lg:text-7xl text-[#363958]">
+            <span class="text-orange-300">Be the Penguins</span><br />of Winter
+          </h1>
+          <p class="text-base text-[#3E3E3E] w-full lg:w-80">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button
+            class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] p-3 text-white rounded-lg space-x-2 text-base"
+          >
+            <i class="fa-solid fa-cart-shopping pr-2"></i>BUY NOW
+          </button>
+        </div>
+        <div>
+          <img class="w-full" src="./images/model.png" alt="Model" />
+        </div>
+      </section>
     </header>
     <!-- main section start  -->
     <main></main>
